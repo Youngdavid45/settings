@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #F4F5F8;
+    color: #c4c4c4;
+    font-family: "Muli", sans-serif;
+}
+
+/* .container {
+    display: grid;
+    height: 100%;
+    grid-gap: 6px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px auto 40px;
+} */
+
+.container {
+    display: flex;
+    position: relative;
+}
+
+.menu {
+    height: 100vh;
+    width: 20%;
+    background-color: white;
+    display: block;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px 0 0 20px;
+    color: black;
+}
+
+.menu > h2 {
+    color: #38a956;
+}
+
+.menu ul li {
+    list-style: none;
+    padding: 10px 0;
+    
+}
+
+.menu ul ul {
+    display: none;
+}
+
+.menu ul li:hover > ul {
+    display: block;
+}
+
+.right {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+}
+
+.right .header input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.right > h3 {
+    color: orange;
+    padding: 0 20px;
+}
+
+.right .content {
+    background-color: white;
+    padding: 0 20px;
+}
+
+.right .content ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.right .content li {
+    list-style: none;
+    /* padding: 5px 50px 5px 0px; */
+    margin: 0;
+    padding: 2px 30px 10px 0px;
+    
+}
+
+.right .info > h3 {
+    padding: 0 12px;
+}
+
+form > div{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px 170px 10px;
+    width: 60%;
+}
+
+form p {
+    font-size: 10px;
+    color: red;
+    margin: 0;
+}
+
+form input {
+    padding: 10px;
+    margin: 0px 0 18px 0;
+    border-radius: 5px;
+}
+
+form button {
+    width: 20%;
+    background-color: orange;
+    color: white;
+    border-radius: 3px;
+    padding: 12px 20px;
+    border: none;
+}
